@@ -1,5 +1,5 @@
 {% set name = "pycustomfocus" %}
-{% set version = "2.3" %}
+{% set version = "3.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyCustomFocus-{{ version }}.tar.gz
-  sha256: 6c9899fe342f6d3a4952e34ea71b9edfea71b93eb33901b9962f46c94205d6df
+  sha256: be872eb31748799597d9c89327a917e30c9a2b96fecdb7c9200b4cc4f76f598e
 
 build:
   noarch: python
