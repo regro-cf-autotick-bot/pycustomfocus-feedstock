@@ -36,8 +36,14 @@ requirements:
 test:
   imports:
     - PyFocus
-    - PyFocus.sim
-    - PyFocus.VP_functions
+    - PyFocus.custom_dataclasses
+    - PyFocus.custom_typing
+    - PyFocus.equations
+    - PyFocus.helpers
+    - PyFocus.model
+    - PyFocus.napari_adapter
+    - PyFocus.plot_functions
+    - PyFocus.user_interface
   commands:
     - pip check
   requires:
