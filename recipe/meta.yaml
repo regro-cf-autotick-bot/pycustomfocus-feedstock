@@ -16,20 +16,22 @@ build:
 
 requirements:
   host:
-    - python >=3.6
     - pip
-  run:
     - python >=3.6
-    - numpy
-    - scipy
-    - qdarkstyle
+    - setuptools
+  run:
     - config
-    - tqdm
-    - matplotlib-base
-    - pyqt
-    - qtpy
-    - pyqtgraph
     - configparser
+    - matplotlib-base
+    - numpy
+    - pydantic
+    - python >=3.6
+    - pyqt
+    - pyqtgraph
+    - qdarkstyle
+    - qtpy
+    - scipy
+    - tqdm
 
 test:
   imports:
@@ -42,10 +44,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/fcaprile/PyFocus
+  home: https://pypi.org/project/PyCustomFocus
   summary: Full vectorial calculation of focused electromagnetic fields moduled by a custom phase mask
   license: MIT
   license_file: LICENCE.txt
+  dev_url: https://github.com/fcaprile/PyFocus
 
 extra:
   recipe-maintainers:
