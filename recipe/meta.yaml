@@ -1,5 +1,5 @@
 {% set name = "pycustomfocus" %}
-{% set version = "2.3" %}
+{% set version = "3.3.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,9 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyCustomFocus-{{ version }}.tar.gz
-  sha256: 6c9899fe342f6d3a4952e34ea71b9edfea71b93eb33901b9962f46c94205d6df
+  sha256: 720cd42cb84148a9b9af3e5727be53d61c68f993a615a3609e37830a4d2c4249
+  patches:
+    - qtpy.patch
 
 build:
   noarch: python
@@ -16,36 +18,44 @@ build:
 
 requirements:
   host:
-    - python >=3.6
     - pip
-  run:
     - python >=3.6
-    - numpy
-    - scipy
-    - qdarkstyle
+  run:
     - config
-    - tqdm
-    - matplotlib-base
-    - pyqt
-    - qtpy
-    - pyqtgraph
     - configparser
+    - matplotlib-base
+    - numpy
+    - pydantic
+    # - pyqt  # Replaced by qtpy with patch
+    - pyqtgraph
+    - python >=3.6
+    - qdarkstyle
+    - qtpy
+    - scipy
+    - tqdm
 
 test:
   imports:
     - PyFocus
-    - PyFocus.sim
-    - PyFocus.VP_functions
+    - PyFocus.custom_dataclasses
+    - PyFocus.custom_typing
+    - PyFocus.equations
+    - PyFocus.model
+    - PyFocus.napari_adapter
+    - PyFocus.plot_functions
+    - PyFocus.user_interface
   commands:
+    - pip list
     - pip check
   requires:
     - pip
 
 about:
-  home: https://github.com/fcaprile/PyFocus
+  home: https://pypi.org/project/PyCustomFocus
   summary: Full vectorial calculation of focused electromagnetic fields moduled by a custom phase mask
   license: MIT
   license_file: LICENCE.txt
+  dev_url: https://github.com/fcaprile/PyFocus
 
 extra:
   recipe-maintainers:

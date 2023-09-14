@@ -1,0 +1,85 @@
+diff --git a/src/PyFocus/user_interface/front_end_ui.py b/src/PyFocus/user_interface/front_end_ui.py
+index f29512b..ed42cbd 100644
+--- a/src/PyFocus/user_interface/front_end_ui.py
++++ b/src/PyFocus/user_interface/front_end_ui.py
+@@ -2,11 +2,11 @@
+ 
+ # Form implementation generated from reading ui file 'front_end.ui'
+ #
+-# Created by: PyQt5 UI code generator 5.9.2
++# Created by: qtpy UI code generator 5.9.2
+ #
+ # WARNING! All changes made in this file will be lost!
+ 
+-from PyQt5 import QtCore, QtGui, QtWidgets
++from qtpy import QtCore, QtGui, QtWidgets
+ 
+ #Scaling based on the screen resolution
+ import ctypes
+diff --git a/src/PyFocus/user_interface/mask_selection/mask_selection.py b/src/PyFocus/user_interface/mask_selection/mask_selection.py
+index c138c5f..867553c 100644
+--- a/src/PyFocus/user_interface/mask_selection/mask_selection.py
++++ b/src/PyFocus/user_interface/mask_selection/mask_selection.py
+@@ -2,11 +2,11 @@
+ 
+ # Form implementation generated from reading ui file 'mask_selection2.ui'
+ #
+-# Created by: PyQt5 UI code generator 5.9.2
++# Created by: qtpy UI code generator 5.9.2
+ #
+ # WARNING! All changes made in this file will be lost!
+ 
+-from PyQt5 import QtCore, QtGui, QtWidgets
++from qtpy import QtCore, QtGui, QtWidgets
+ import config
+ import numpy as np
+ 
+diff --git a/src/PyFocus/user_interface/mask_selection/mask_selection2.py b/src/PyFocus/user_interface/mask_selection/mask_selection2.py
+index e6a8666..74be1ee 100644
+--- a/src/PyFocus/user_interface/mask_selection/mask_selection2.py
++++ b/src/PyFocus/user_interface/mask_selection/mask_selection2.py
+@@ -2,11 +2,11 @@
+ 
+ # Form implementation generated from reading ui file 'mask_selection2.ui'
+ #
+-# Created by: PyQt5 UI code generator 5.9.2
++# Created by: qtpy UI code generator 5.9.2
+ #
+ # WARNING! All changes made in this file will be lost!
+ 
+-from PyQt5 import QtCore, QtGui, QtWidgets
++from qtpy import QtCore, QtGui, QtWidgets
+ 
+ class Ui_MaskWindow(object):
+     def setupUi(self, MaskWindow):
+diff --git a/src/PyFocus/user_interface/mask_selection/mask_selection_modified.py b/src/PyFocus/user_interface/mask_selection/mask_selection_modified.py
+index a1d5311..ad18aee 100644
+--- a/src/PyFocus/user_interface/mask_selection/mask_selection_modified.py
++++ b/src/PyFocus/user_interface/mask_selection/mask_selection_modified.py
+@@ -2,11 +2,11 @@
+ 
+ # Form implementation generated from reading ui file 'mask_selection2.ui'
+ #
+-# Created by: PyQt5 UI code generator 5.9.2
++# Created by: qtpy UI code generator 5.9.2
+ #
+ # WARNING! All changes made in this file will be lost!
+ 
+-from PyQt5 import QtCore, QtGui, QtWidgets
++from qtpy import QtCore, QtGui, QtWidgets
+ import config
+ import numpy as np
+ 
+diff --git a/src/PyFocus/user_interface/user_interface.py b/src/PyFocus/user_interface/user_interface.py
+index cd864cd..32bdc2d 100644
+--- a/src/PyFocus/user_interface/user_interface.py
++++ b/src/PyFocus/user_interface/user_interface.py
+@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
+ import time
+ import configparser
+ import config
+-from PyQt5.QtWidgets import QFileDialog
++from qtpy.QtWidgets import QFileDialog
+ from qtpy import QtWidgets
+ from pyqtgraph.Qt import QtGui
+ import qdarkstyle
