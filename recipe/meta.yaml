@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyCustomFocus-{{ version }}.tar.gz
   sha256: 720cd42cb84148a9b9af3e5727be53d61c68f993a615a3609e37830a4d2c4249
+  patches:
+    - qtpy.patch
 
 build:
   noarch: python
@@ -24,7 +26,7 @@ requirements:
     - matplotlib-base
     - numpy
     - pydantic
-    # - pyqt
+    # - pyqt  # Replaced by qtpy with patch
     - pyqtgraph
     - python >=3.6
     - qdarkstyle
