@@ -3,11 +3,13 @@ About pycustomfocus-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pycustomfocus-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/fcaprile/PyFocus
+Home: https://pypi.org/project/PyCustomFocus
 
 Package license: MIT
 
 Summary: Full vectorial calculation of focused electromagnetic fields moduled by a custom phase mask
+
+Development: https://github.com/fcaprile/PyFocus
 
 Current build status
 ====================
