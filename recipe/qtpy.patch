@@ -1,10 +1,3 @@
-diff --git a/.DS_Store b/.DS_Store
-deleted file mode 100644
-index 5fd8700..0000000
-Binary files a/.DS_Store and /dev/null differ
-diff --git a/src/.DS_Store b/src/.DS_Store
-index ba270ca..8026d24 100644
-Binary files a/src/.DS_Store and b/src/.DS_Store differ
 diff --git a/src/PyFocus/user_interface/front_end_ui.py b/src/PyFocus/user_interface/front_end_ui.py
 index cb30f14..e0970aa 100644
 --- a/src/PyFocus/user_interface/front_end_ui.py
